@@ -1,10 +1,10 @@
 //= require jquery-ui/version
 
 /*!
- * jQuery UI Scroll Parent 1.12.1
+ * jQuery UI Scroll Parent 1.13.3-pre
  * http://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
  * http://jquery.org/license
  */
@@ -15,6 +15,8 @@
 //>>docs: http://api.jqueryui.com/scrollParent/
 
 ( function( factory ) {
+	"use strict";
+
 	if ( typeof define === "function" && define.amd ) {
 
 		// AMD. Register as an anonymous module.
@@ -24,7 +26,8 @@
 		// Browser globals
 		factory( jQuery );
 	}
-} ( function( $ ) {
+} )( function( $ ) {
+"use strict";
 
 return $.fn.scrollParent = function( includeHidden ) {
 	var position = this.css( "position" ),
@@ -44,4 +47,4 @@ return $.fn.scrollParent = function( includeHidden ) {
 		scrollParent;
 };
 
-} ) );
+} );

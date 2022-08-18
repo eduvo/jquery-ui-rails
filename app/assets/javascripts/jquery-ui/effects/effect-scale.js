@@ -3,10 +3,10 @@
 //= require jquery-ui/effects/effect-size
 
 /*!
- * jQuery UI Effects Scale 1.12.1
+ * jQuery UI Effects Scale 1.13.3-pre
  * http://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
  * http://jquery.org/license
  */
@@ -18,6 +18,8 @@
 //>>demos: http://jqueryui.com/effect/
 
 ( function( factory ) {
+	"use strict";
+
 	if ( typeof define === "function" && define.amd ) {
 
 		// AMD. Register as an anonymous module.
@@ -32,7 +34,8 @@
 		// Browser globals
 		factory( jQuery );
 	}
-}( function( $ ) {
+} )( function( $ ) {
+"use strict";
 
 return $.effects.define( "scale", function( options, done ) {
 
@@ -57,4 +60,4 @@ return $.effects.define( "scale", function( options, done ) {
 	$.effects.effect.size.call( this, newOptions, done );
 } );
 
-} ) );
+} );
